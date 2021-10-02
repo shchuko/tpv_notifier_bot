@@ -1,0 +1,3 @@
+!.gitignore
+!tpv_notifier_lambda.py
+!requirements.txt
