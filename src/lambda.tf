@@ -6,10 +6,10 @@ resource "null_resource" "lambda_invoke_pip" {
 
 data "archive_file" "lambda_zip" {
   output_path = local.lambda_zip_path
-  type = "zip"
+  type        = "zip"
 
   source_dir = local.lambda_src_dir
-  excludes = local.lambda_excludes
+  excludes   = local.lambda_excludes
   depends_on = [null_resource.lambda_invoke_pip]
 }
 

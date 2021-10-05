@@ -18,10 +18,10 @@ def notify(caption: str):
 
 
 def thursday_notifier_handler(event, context):
-    notify("Дедлайн завтра в 19.00!")
+    notify("Дедлайн завтра в 23:59!")
     return {}
 
 
 def friday_notifier_handler(event, context):
-    notify("Дедлайн сегодня в 19.00!")
+    notify("Дедлайн сегодня в 23:59!")
     return {}
